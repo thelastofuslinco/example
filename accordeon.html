@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Inter]">
+    <div>
+      <button
+        class="accordion flex gap-2 items-center text-[#001834] cursor-pointer p-4 w-full font-normal text-xl border-0 outline-none ease-in text-left hover:bg-[#cccccc]"
+      >
+        Integridade 1
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="24"
+          viewBox="0 0 16 24"
+          fill="none"
+        >
+          <path
+            d="M0 21.18L9.33898 12L0 2.82L2.8751 0L15.1096 12L2.8751 24L0 21.18Z"
+            fill="#001834"
+          />
+        </svg>
+      </button>
+      <div class="px-4 hidden bg-white">
+        <ul class="text-xl font-normal text-[#262626]">
+          <li>Auditoria Independente</li>
+          <li>Código de Conduta Ética</li>
+          <li>Comitê de Ética</li>
+          <li>Demonstrativo dos resultados da ouvidoria</li>
+          <li>Demonstrativo dos resultados do SAC</li>
+          <li>Relatório de Controle Interno</li>
+        </ul>
+      </div>
+
+      <button
+        class="accordion flex gap-2 items-center text-[#001834] cursor-pointer p-4 w-full font-normal text-xl border-0 outline-none ease-in text-left hover:bg-[#cccccc]"
+      >
+        Integridade 2
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="24"
+          viewBox="0 0 16 24"
+          fill="none"
+        >
+          <path
+            d="M0 21.18L9.33898 12L0 2.82L2.8751 0L15.1096 12L2.8751 24L0 21.18Z"
+            fill="#001834"
+          />
+        </svg>
+      </button>
+      <div class="px-4 hidden bg-white">
+        <ul class="text-xl font-normal text-[#262626]">
+          <li>Auditoria Independente</li>
+          <li>Código de Conduta Ética</li>
+          <li>Comitê de Ética</li>
+          <li>Demonstrativo dos resultados da ouvidoria</li>
+          <li>Demonstrativo dos resultados do SAC</li>
+          <li>Relatório de Controle Interno</li>
+        </ul>
+      </div>
+
+      <button
+        class="accordion flex gap-2 items-center text-[#001834] cursor-pointer p-4 w-full font-normal text-xl border-0 outline-none ease-in text-left hover:bg-[#cccccc]"
+      >
+        Integridade 3
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="24"
+          viewBox="0 0 16 24"
+          fill="none"
+        >
+          <path
+            d="M0 21.18L9.33898 12L0 2.82L2.8751 0L15.1096 12L2.8751 24L0 21.18Z"
+            fill="#001834"
+          />
+        </svg>
+      </button>
+      <div class="px-4 hidden bg-white">
+        <ul class="text-xl font-normal text-[#262626]">
+          <li>Auditoria Independente</li>
+          <li>Código de Conduta Ética</li>
+          <li>Comitê de Ética</li>
+          <li>Demonstrativo dos resultados da ouvidoria</li>
+          <li>Demonstrativo dos resultados do SAC</li>
+          <li>Relatório de Controle Interno</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const accordion = document.getElementsByClassName('accordion')
+
+      for (const element of accordion) {
+        element.addEventListener('click', function () {
+          this.lastElementChild.classList.toggle('rotate-90')
+          const panel = this.nextElementSibling
+          if (panel.style.display === 'block') {
+            panel.style.display = 'none'
+          } else {
+            panel.style.display = 'block'
+          }
+        })
+      }
+    </script>
+  </body>
+</html>
