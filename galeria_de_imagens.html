@@ -35,27 +35,27 @@
       </button>
       <div class="gallery relative h-full w-full flex justify-center">
         <img
-          class="absolute h-full rounded-lg w-[680px] left-[calc(0%+1rem)]"
+          class="absolute h-full rounded-lg w-[680px] translate-x-[-4rem] transition-transform"
           src="https://picsum.photos/id/1004/400/400"
           alt="a lovely kiss in the night"
         />
         <img
-          class="absolute h-full rounded-lg w-[680px] left-[calc(0%+1rem)]"
+          class="absolute h-full rounded-lg w-[680px] translate-x-[-4rem] transition-transform"
           src="https://picsum.photos/id/1013/400/400"
           alt="a women inside a car"
         />
         <img
-          class="absolute h-full rounded-lg w-[680px] z-[1] active"
+          class="absolute h-full rounded-lg w-[680px] z-[1] active transition-transform"
           src="https://picsum.photos/id/1066/400/400"
           alt="a baby"
         />
         <img
-          class="absolute h-full rounded-lg w-[680px] left-[calc(100%-680px-1rem)]"
+          class="absolute h-full rounded-lg w-[680px] translate-x-[4rem] transition-transform"
           src="https://picsum.photos/id/325/400/400"
           alt="a girl in the forest"
         />
         <img
-          class="absolute h-full rounded-lg w-[680px] left-[calc(100%-680px-1rem)]"
+          class="absolute h-full rounded-lg w-[680px] translate-x-[4rem] transition-transform"
           src="https://picsum.photos/id/65/400/400"
           alt="a girl"
         />
@@ -86,9 +86,9 @@
 
         if (nextSibling) {
           photo.classList.remove('z-[1]', 'active')
-          photo.classList.add('left-[calc(0%+1rem)]')
+          photo.classList.add('translate-x-[-4rem]')
           nextSibling.classList.add('z-[1]', 'active')
-          nextSibling.classList.remove('left-[calc(100%-680px-1rem)]')
+          nextSibling.classList.remove('translate-x-[4rem]')
         }
       })
 
@@ -98,9 +98,9 @@
 
         if (previousSibling) {
           photo.classList.remove('z-[1]', 'active')
-          photo.classList.add('left-[calc(100%-680px-1rem)]')
+          photo.classList.add('translate-x-[4rem]')
           previousSibling.classList.add('z-[1]', 'active')
-          previousSibling.classList.remove('left-[calc(0%+1rem)]')
+          previousSibling.classList.remove('translate-x-[-4rem]')
         }
       })
 
