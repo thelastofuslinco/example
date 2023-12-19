@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-[Inter]">
+    <main
+      class="flex flex-col mt-10 gap-[4.25rem] w-full max-w-[75rem] mx-auto px-4"
+    >
+      <section>
+        <div class="flex justify-between">
+          <h1 class="font-bold text-4xl mb-8">Blog Vida Saúdável</h1>
+          <div
+            class="h-10 flex bg-[#F2F2F2] items-center max-w-[448px] w-full justify-between p-3 gap-4 rounded-md"
+          >
+            <input
+              class="bg-transparent outline-0 w-full font-normal text-sm"
+              type="search"
+              placeholder="Buscar posts"
+            /><button class="h-[20px] w-[20px]" aria-label="search button">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="magnifying-glass"
+                class="svg-inline--fa fa-magnifying-glass"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <section class="grid grid-cols-3 gap-x-5 gap-y-8">
+          <div
+            class="[&:first-child>div:last-child>div:first-child>div:last-child]:line-clamp-5 w-full rounded-md overflow-hidden shadow-md first:col-span-3 first:grid first:grid-cols-2 first:shadow-none [&:first-child>div:first-child]:h-[26.125rem] [&>div:first-child]:h-[12.5rem] [&:first-child>div:last-child>div>div>p]:text-lg [&:first-child>div:last-child>div>h1]:text-4xl [&:first-child>div:last-child>a]:bg-[#fcc530] [&:first-child>div:last-child>a]:text-[#333333] [&:first-child>div:last-child]:h-full"
+          >
+            <div class="w-full flex justify-center align-center">
+              <img
+                alt="0111-Feirao-16-Copia"
+                loading="lazy"
+                width="270"
+                height="270"
+                decoding="async"
+                data-nimg="1"
+                class="object-cover w-full h-full"
+                src="https://picsum.photos/600"
+                style="color: transparent"
+              />
+            </div>
+            <div
+              class="flex flex flex-col w-full h-[calc(100%-12.5rem)] py-4 px-3 gap-4"
+            >
+              <div class="flex flex-col h-full gap-5">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  Sesi e Senai estão entre as atrações da Feira Minha Casa
+                  Própria
+                </h1>
+                <div class="line-clamp-4">
+                  <p>
+                    Além de realizarem sonhos, os visitantes da Feira Minha Casa
+                    Própria podem descobrir como o Sesi e o Senai transformam
+                    vidas, seja por meio da Educação Básica, do Ensino
+                    Profissionalizante ou de um portfólio de produtos e serviços
+                    para a comunidade e para o setor industrial. A interação
+                    ocorre de forma divertida, por meio de […]
+                  </p>
+                </div>
+              </div>
+              <a
+                class="rounded-lg text-center font-bold py-2 px-8 text-[#f8f8f8] bg-[#014898]"
+                target=""
+                href="sesi-e-senai-estao-entre-as-atracoes-da-feira-minha-casa-propria"
+                >Saiba mais</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-full rounded-md overflow-hidden shadow-md first:col-span-3 first:grid first:grid-cols-2 first:shadow-none [&:first-child>div:first-child]:h-[26.125rem] [&>div:first-child]:h-[12.5rem] [&:first-child>div:last-child>div>div>p]:text-lg [&:first-child>div:last-child>div>h1]:text-4xl [&:first-child>div:last-child>a]:bg-[#fcc530] [&:first-child>div:last-child>a]:text-[#333333] [&:first-child>div:last-child]:h-full"
+          >
+            <div class="w-full flex justify-center align-center">
+              <img alt="Mangue_01" loading="lazy" width="270" height="270"
+              decoding="async" data-nimg="1"
+              src="https://picsum.photos/600"class="object-cover w-full h-full"
+              mage?url=https%3A%2F%2Fapi-blog.sistemafiea.com.br%2Fwp-content%2Fuploads%2F2023%2F11%2FMangue_01.jpg&amp;w=640&amp;q=75"
+              style="color: transparent" />
+            </div>
+            <div
+              class="flex flex-col w-full h-[calc(100%-12.5rem)] py-4 px-3 gap-4 first:h-full"
+            >
+              <div class="flex flex-col h-full gap-5">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  Ecoinovação: modelo de negócio
+                </h1>
+                <div class="line-clamp-4">
+                  <p>
+                    Ecoinovação é uma tendência crescente no contexto
+                    socioeconômico mundial das organizações. Ela tem o objetivo
+                    de remodelar os processos de desenvolvimento e crescimento
+                    sustentável das empresas, visando à inovação como elo para
+                    essa transformação. No contexto industrial, contudo, os
+                    desafios da transição são maiores, devido à construção
+                    política, social e tecnológica que envolve o tema. […]
+                  </p>
+                </div>
+              </div>
+              <a
+                class="rounded-lg text-center font-bold py-2 px-8 text-[#f8f8f8] bg-[#014898]"
+                target=""
+                href="ecoinovacao-modelo-de-negocio"
+                >Saiba mais</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-full rounded-md overflow-hidden shadow-md first:col-span-3 first:grid first:grid-cols-2 first:shadow-none [&:first-child>div:first-child]:h-[26.125rem] [&>div:first-child]:h-[12.5rem] [&:first-child>div:last-child>div>div>p]:text-lg [&:first-child>div:last-child>div>h1]:text-4xl [&:first-child>div:last-child>a]:bg-[#fcc530] [&:first-child>div:last-child>a]:text-[#333333] [&:first-child>div:last-child]:h-full"
+          >
+            <div class="w-full flex justify-center align-center">
+              <img
+                alt="Electronis calipers on an old bearing detail."
+                loading="lazy"
+                width="270"
+                height="270"
+                decoding="async"
+                data-nimg="1"
+                class="object-cover w-full h-full"
+                src="https://picsum.photos/600"
+                style="color: transparent"
+              />
+            </div>
+            <div
+              class="flex flex-col w-full h-[calc(100%-12.5rem)] py-4 px-3 gap-4 first:h-full"
+            >
+              <div class="flex flex-col h-full gap-5">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  Metrologia Industrial: entenda a importância desta ferramenta
+                </h1>
+                <div class="line-clamp-4">
+                  <p>
+                    Responsável por fornecer dados confiáveis para melhores
+                    tomadas de decisão No processo industrial, é imprescindível
+                    ter boas condições de monitoramento, segurança e controle de
+                    cada detalhe da produção. Esses fatores são essenciais para
+                    a eficiência dos serviços e qualidade dos
+                    produtos.&nbsp;&nbsp; Para garantir que estas condições
+                    atendam aos padrões de conformidade de cada setor, aplicar
+                    […]
+                  </p>
+                </div>
+              </div>
+              <a
+                class="rounded-lg text-center font-bold py-2 px-8 text-[#f8f8f8] bg-[#014898]"
+                target=""
+                href="metrologia-industrial-entenda-a-importancia-desta-ferramenta"
+                >Saiba mais</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-full rounded-md overflow-hidden shadow-md first:col-span-3 first:grid first:grid-cols-2 first:shadow-none [&:first-child>div:first-child]:h-[26.125rem] [&>div:first-child]:h-[12.5rem] [&:first-child>div:last-child>div>div>p]:text-lg [&:first-child>div:last-child>div>h1]:text-4xl [&:first-child>div:last-child>a]:bg-[#fcc530] [&:first-child>div:last-child>a]:text-[#333333] [&:first-child>div:last-child]:h-full"
+          >
+            <div class="w-full flex justify-center align-center">
+              <img alt="Enterprise resource planning with person using a laptop"
+              loading="lazy" width="270" height="270" decoding="async"
+              data-nimg="1" src="https://picsum.photos/600"class="object-cover
+              w-full h-full"
+              mage?url=https%3A%2F%2Fapi-blog.sistemafiea.com.br%2Fwp-content%2Fuploads%2F2023%2F11%2FiStock-1209116264.jpg&amp;w=640&amp;q=75"
+              style="color: transparent" />
+            </div>
+            <div
+              class="flex flex-col w-full h-[calc(100%-12.5rem)] py-4 px-3 gap-4 first:h-full"
+            >
+              <div class="flex flex-col h-full gap-5">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  ERP: a ferramenta que pode transformar a gestão da sua empresa
+                </h1>
+                <div class="line-clamp-4">
+                  <p>
+                    Software que integra todas as informações e processos de uma
+                    empresa em um único sistema A gestão de uma empresa é um
+                    processo extremamente complexo, que envolve diversas áreas e
+                    atividades. Para garantir o sucesso do negócio, é importante
+                    contar com ferramentas e soluções que auxiliem na tomada de
+                    decisões, redução de custos e melhoria […]
+                  </p>
+                </div>
+              </div>
+              <a
+                class="rounded-lg text-center font-bold py-2 px-8 text-[#f8f8f8] bg-[#014898]"
+                target=""
+                href="erp-a-ferramenta-que-pode-transformar-a-gestao-da-sua-empresa"
+                >Saiba mais</a
+              >
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="flex flex-col my-8 gap-10">
+        <h1 class="font-semibold text-[#333333] text-2xl">
+          Todos os Artigos desta Categoria
+        </h1>
+        <div class="grid grid-cols-2 gap-y-8 gap-x-4">
+          <a
+            href="/blog/erp-a-ferramenta-que-pode-transformar-a-gestao-da-sua-empresa"
+            class="flex gap-6 text-[#333333]"
+            ><div
+              class="w-full max-w-[18rem] h-[12.5rem] overflow-hidden rounded flex justify-center items-center"
+            >
+              <img
+                alt="Enterprise resource planning with person using a laptop"
+                loading="lazy"
+                width="270"
+                height="270"
+                decoding="async"
+                data-nimg="1"
+                class="w-full h-full object-cover"
+                src="https://picsum.photos/600"
+                src="/_next/image?url=https%3A%2F%2Fapi-blog.sistemafiea.com.br%2Fwp-content%2Fuploads%2F2023%2F11%2FiStock-1209116264.jpg&amp;w=640&amp;q=75"
+                style="color: transparent"
+              />
+            </div>
+            <div class="flex flex-col gap-3 max-w-[41.3125rem] w-full">
+              <div class="flex flex-col">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  ERP: a ferramenta que pode transformar a gestão da sua empresa
+                </h1>
+                <div class="line-clamp-3">
+                  <p>
+                    Software que integra todas as informações e processos de uma
+                    empresa em um único sistema A gestão de uma empresa é um
+                    processo extremamente complexo, que envolve diversas áreas e
+                    atividades. Para garantir o sucesso do negócio, é importante
+                    contar com ferramentas e soluções que auxiliem na tomada de
+                    decisões, redução de custos e melhoria […]
+                  </p>
+                </div>
+              </div>
+              <button
+                class="text-[#014898] underline text-start text-base pointer"
+              >
+                Saiba mais
+              </button>
+            </div></a
+          >
+          <a
+            href="/blog/erp-a-ferramenta-que-pode-transformar-a-gestao-da-sua-empresa"
+            class="flex gap-6 text-[#333333]"
+            ><div
+              class="w-full max-w-[18rem] h-[12.5rem] overflow-hidden rounded flex justify-center items-center"
+            >
+              <img
+                alt="Enterprise resource planning with person using a laptop"
+                loading="lazy"
+                width="270"
+                height="270"
+                decoding="async"
+                data-nimg="1"
+                class="w-full h-full object-cover"
+                src="https://picsum.photos/600"
+                src="/_next/image?url=https%3A%2F%2Fapi-blog.sistemafiea.com.br%2Fwp-content%2Fuploads%2F2023%2F11%2FiStock-1209116264.jpg&amp;w=640&amp;q=75"
+                style="color: transparent"
+              />
+            </div>
+            <div class="flex flex-col gap-3 max-w-[41.3125rem] w-full">
+              <div class="flex flex-col">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  ERP: a ferramenta que pode transformar a gestão da sua empresa
+                </h1>
+                <div class="line-clamp-3">
+                  <p>
+                    Software que integra todas as informações e processos de uma
+                    empresa em um único sistema A gestão de uma empresa é um
+                    processo extremamente complexo, que envolve diversas áreas e
+                    atividades. Para garantir o sucesso do negócio, é importante
+                    contar com ferramentas e soluções que auxiliem na tomada de
+                    decisões, redução de custos e melhoria […]
+                  </p>
+                </div>
+              </div>
+              <button
+                class="text-[#014898] underline text-start text-base pointer"
+              >
+                Saiba mais
+              </button>
+            </div></a
+          >
+          <a
+            href="/blog/erp-a-ferramenta-que-pode-transformar-a-gestao-da-sua-empresa"
+            class="flex gap-6 text-[#333333]"
+            ><div
+              class="w-full max-w-[18rem] h-[12.5rem] overflow-hidden rounded flex justify-center items-center"
+            >
+              <img
+                alt="Enterprise resource planning with person using a laptop"
+                loading="lazy"
+                width="270"
+                height="270"
+                decoding="async"
+                data-nimg="1"
+                class="w-full h-full object-cover"
+                src="https://picsum.photos/600"
+                src="/_next/image?url=https%3A%2F%2Fapi-blog.sistemafiea.com.br%2Fwp-content%2Fuploads%2F2023%2F11%2FiStock-1209116264.jpg&amp;w=640&amp;q=75"
+                style="color: transparent"
+              />
+            </div>
+            <div class="flex flex-col gap-3 max-w-[41.3125rem] w-full">
+              <div class="flex flex-col">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  ERP: a ferramenta que pode transformar a gestão da sua empresa
+                </h1>
+                <div class="line-clamp-3">
+                  <p>
+                    Software que integra todas as informações e processos de uma
+                    empresa em um único sistema A gestão de uma empresa é um
+                    processo extremamente complexo, que envolve diversas áreas e
+                    atividades. Para garantir o sucesso do negócio, é importante
+                    contar com ferramentas e soluções que auxiliem na tomada de
+                    decisões, redução de custos e melhoria […]
+                  </p>
+                </div>
+              </div>
+              <button
+                class="text-[#014898] underline text-start text-base pointer"
+              >
+                Saiba mais
+              </button>
+            </div></a
+          >
+          <a
+            href="/blog/erp-a-ferramenta-que-pode-transformar-a-gestao-da-sua-empresa"
+            class="flex gap-6 text-[#333333]"
+            ><div
+              class="w-full max-w-[18rem] h-[12.5rem] overflow-hidden rounded flex justify-center items-center"
+            >
+              <img
+                alt="Enterprise resource planning with person using a laptop"
+                loading="lazy"
+                width="270"
+                height="270"
+                decoding="async"
+                data-nimg="1"
+                class="w-full h-full object-cover"
+                src="https://picsum.photos/600"
+                src="/_next/image?url=https%3A%2F%2Fapi-blog.sistemafiea.com.br%2Fwp-content%2Fuploads%2F2023%2F11%2FiStock-1209116264.jpg&amp;w=640&amp;q=75"
+                style="color: transparent"
+              />
+            </div>
+            <div class="flex flex-col gap-3 max-w-[41.3125rem] w-full">
+              <div class="flex flex-col">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  ERP: a ferramenta que pode transformar a gestão da sua empresa
+                </h1>
+                <div class="line-clamp-3">
+                  <p>
+                    Software que integra todas as informações e processos de uma
+                    empresa em um único sistema A gestão de uma empresa é um
+                    processo extremamente complexo, que envolve diversas áreas e
+                    atividades. Para garantir o sucesso do negócio, é importante
+                    contar com ferramentas e soluções que auxiliem na tomada de
+                    decisões, redução de custos e melhoria […]
+                  </p>
+                </div>
+              </div>
+              <button
+                class="text-[#014898] underline text-start text-base pointer"
+              >
+                Saiba mais
+              </button>
+            </div></a
+          >
+          <a
+            href="/blog/erp-a-ferramenta-que-pode-transformar-a-gestao-da-sua-empresa"
+            class="flex gap-6 text-[#333333]"
+            ><div
+              class="w-full max-w-[18rem] h-[12.5rem] overflow-hidden rounded flex justify-center items-center"
+            >
+              <img
+                alt="Enterprise resource planning with person using a laptop"
+                loading="lazy"
+                width="270"
+                height="270"
+                decoding="async"
+                data-nimg="1"
+                class="w-full h-full object-cover"
+                src="https://picsum.photos/600"
+                src="/_next/image?url=https%3A%2F%2Fapi-blog.sistemafiea.com.br%2Fwp-content%2Fuploads%2F2023%2F11%2FiStock-1209116264.jpg&amp;w=640&amp;q=75"
+                style="color: transparent"
+              />
+            </div>
+            <div class="flex flex-col gap-3 max-w-[41.3125rem] w-full">
+              <div class="flex flex-col">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  ERP: a ferramenta que pode transformar a gestão da sua empresa
+                </h1>
+                <div class="line-clamp-3">
+                  <p>
+                    Software que integra todas as informações e processos de uma
+                    empresa em um único sistema A gestão de uma empresa é um
+                    processo extremamente complexo, que envolve diversas áreas e
+                    atividades. Para garantir o sucesso do negócio, é importante
+                    contar com ferramentas e soluções que auxiliem na tomada de
+                    decisões, redução de custos e melhoria […]
+                  </p>
+                </div>
+              </div>
+              <button
+                class="text-[#014898] underline text-start text-base pointer"
+              >
+                Saiba mais
+              </button>
+            </div></a
+          >
+          <a
+            href="/blog/erp-a-ferramenta-que-pode-transformar-a-gestao-da-sua-empresa"
+            class="flex gap-6 text-[#333333]"
+            ><div
+              class="w-full max-w-[18rem] h-[12.5rem] overflow-hidden rounded flex justify-center items-center"
+            >
+              <img
+                alt="Enterprise resource planning with person using a laptop"
+                loading="lazy"
+                width="270"
+                height="270"
+                decoding="async"
+                data-nimg="1"
+                class="w-full h-full object-cover"
+                src="https://picsum.photos/600"
+                src="/_next/image?url=https%3A%2F%2Fapi-blog.sistemafiea.com.br%2Fwp-content%2Fuploads%2F2023%2F11%2FiStock-1209116264.jpg&amp;w=640&amp;q=75"
+                style="color: transparent"
+              />
+            </div>
+            <div class="flex flex-col gap-3 max-w-[41.3125rem] w-full">
+              <div class="flex flex-col">
+                <div
+                  class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                >
+                  <p
+                    class="text-[#333333] font-normal text-xs flex items-center gap-1"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 20C18.8807 20 20 18.8807 20 17.5C20 16.1193 18.8807 15 17.5 15C16.1193 15 15 16.1193 15 17.5C15 18.8807 16.1193 20 17.5 20ZM17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C15.567 14 14 15.567 14 17.5C14 19.433 15.567 21 17.5 21Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M17.5 15.75C17.7761 15.75 18 15.9739 18 16.25V17.2929L18.3535 17.6465C18.5488 17.8417 18.5488 18.1583 18.3535 18.3535C18.1583 18.5488 17.8417 18.5488 17.6465 18.3535L17 17.7071V16.25C17 15.9739 17.2239 15.75 17.5 15.75Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 11.5H6V12.5H7V11.5ZM6 10.5C5.4477 10.5 5 10.9477 5 11.5V12.5C5 13.0523 5.4477 13.5 6 13.5H7C7.5523 13.5 8 13.0523 8 12.5V11.5C8 10.9477 7.5523 10.5 7 10.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 11.5H10V12.5H11V11.5ZM10 10.5C9.4477 10.5 9 10.9477 9 11.5V12.5C9 13.0523 9.4477 13.5 10 13.5H11C11.5523 13.5 12 13.0523 12 12.5V11.5C12 10.9477 11.5523 10.5 11 10.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15 11.5H14V12.5H15V11.5ZM14 10.5C13.4477 10.5 13 10.9477 13 11.5V12.5C13 13.0523 13.4477 13.5 14 13.5H15C15.5523 13.5 16 13.0523 16 12.5V11.5C16 10.9477 15.5523 10.5 15 10.5H14Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7 15.5H6V16.5H7V15.5ZM6 14.5C5.4477 14.5 5 14.9477 5 15.5V16.5C5 17.0523 5.4477 17.5 6 17.5H7C7.5523 17.5 8 17.0523 8 16.5V15.5C8 14.9477 7.5523 14.5 7 14.5H6Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11 15.5H10V16.5H11V15.5ZM10 14.5C9.4477 14.5 9 14.9477 9 15.5V16.5C9 17.0523 9.4477 17.5 10 17.5H11C11.5523 17.5 12 17.0523 12 16.5V15.5C12 14.9477 11.5523 14.5 11 14.5H10Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 6C4 5.72385 4.22386 5.5 4.5 5.5H7V4.5H4.5C3.67158 4.5 3 5.17155 3 6V18C3 18.8285 3.67158 19.5 4.5 19.5H14.6273C14.4167 19.198 14.2524 18.8612 14.1449 18.5H4.5C4.22386 18.5 4 18.2761 4 18V6ZM17 14.0354C17.1633 14.0121 17.3302 14 17.5 14C17.6698 14 17.8367 14.0121 18 14.0354V6C18 5.1716 17.3285 4.5 16.5 4.5H15V5.5H16.5C16.7761 5.5 17 5.72385 17 6V14.0354ZM8 5.5H13.2812V4.5H8V5.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18 9H4V8H18V9Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M6 3.5C6 3.22386 6.22385 3 6.5 3C6.77615 3 7 3.22386 7 3.5V6C7 6.27615 6.77615 6.5 6.5 6.5C6.22385 6.5 6 6.27615 6 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                      <path
+                        d="M13 3.5C13 3.22386 13.2239 3 13.5 3C13.7761 3 14 3.22386 14 3.5V6C14 6.27615 13.7761 6.5 13.5 6.5C13.2239 6.5 13 6.27615 13 6V3.5Z"
+                        fill="#333333"
+                      ></path>
+                    </svg>
+                    30 de Novembro de 2023
+                  </p>
+                </div>
+                <h1 class="line-clamp-2 text-xl font-bold">
+                  ERP: a ferramenta que pode transformar a gestão da sua empresa
+                </h1>
+                <div class="line-clamp-3">
+                  <p>
+                    Software que integra todas as informações e processos de uma
+                    empresa em um único sistema A gestão de uma empresa é um
+                    processo extremamente complexo, que envolve diversas áreas e
+                    atividades. Para garantir o sucesso do negócio, é importante
+                    contar com ferramentas e soluções que auxiliem na tomada de
+                    decisões, redução de custos e melhoria […]
+                  </p>
+                </div>
+              </div>
+              <button
+                class="text-[#014898] underline text-start text-base pointer"
+              >
+                Saiba mais
+              </button>
+            </div></a
+          >
+        </div>
+
+        <div class="flex items-center justify-center gap-5">
+          <button
+            disabled
+            class="flex items-center bg-transparent border-0 w-5 h-5 justify-center disabled:opacity-30"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-left"
+              class="h-full"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+              ></path>
+            </svg>
+          </button>
+          <a
+            href="#1"
+            class="w-10 h-10 rounded-full border-0 flex items-center justify-center text-[#f8f8f8] font-bold text-2xl bg-[#00244d]"
+          >
+            1
+          </a>
+          <button
+            disabled
+            class="flex items-center bg-transparent border-0 w-5 h-5 justify-center disabled:opacity-30"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="chevron-right"
+              class="h-full"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <path
+                fill="currentColor"
+                d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
