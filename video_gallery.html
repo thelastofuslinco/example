@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+  </head>
+  <body class="font-[Inter]">
+    <div
+      class="flex flex-col px-4 items-center gap-8 mb-16 xl:mx-auto max-w-[1000px]"
+    >
+      <iframe
+        class="selected_video sm:h-[548px] w-full rounded-lg"
+        src="https://www.youtube.com/embed/X-swJqjzjCI"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <div class="glide">
+        <div class="glide__track w-full" data-glide-el="track">
+          <ul class="glide__slides">
+            <li
+              class="glide__slide flex items-center justify-center cursor-pointer"
+            >
+              <svg
+                class="absolute"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="30"
+                viewBox="0 0 40 30"
+                fill="none"
+              >
+                <rect
+                  x="0.917969"
+                  y="0.317139"
+                  width="39.0496"
+                  height="29.3269"
+                  rx="10"
+                  fill="#CA1C1C"
+                />
+                <path
+                  d="M29.7544 14.9804L15.3361 23.1642L15.3361 6.79667L29.7544 14.9804Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+              <img
+                class="w-[319px] rounded-lg"
+                src="https://img.youtube.com/vi/-vUmoQxE7UE/0.jpg"
+                alt=""
+              />
+            </li>
+            <li
+              class="glide__slide flex items-center justify-center cursor-pointer"
+            >
+              <svg
+                class="absolute"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="30"
+                viewBox="0 0 40 30"
+                fill="none"
+              >
+                <rect
+                  x="0.917969"
+                  y="0.317139"
+                  width="39.0496"
+                  height="29.3269"
+                  rx="10"
+                  fill="#CA1C1C"
+                />
+                <path
+                  d="M29.7544 14.9804L15.3361 23.1642L15.3361 6.79667L29.7544 14.9804Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+              <img
+                class="w-[319px] rounded-lg"
+                src="https://img.youtube.com/vi/_5jELltfi9U/0.jpg"
+                alt=""
+              />
+            </li>
+            <li
+              class="glide__slide flex items-center justify-center cursor-pointer"
+            >
+              <svg
+                class="absolute"
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="30"
+                viewBox="0 0 40 30"
+                fill="none"
+              >
+                <rect
+                  x="0.917969"
+                  y="0.317139"
+                  width="39.0496"
+                  height="29.3269"
+                  rx="10"
+                  fill="#CA1C1C"
+                />
+                <path
+                  d="M29.7544 14.9804L15.3361 23.1642L15.3361 6.79667L29.7544 14.9804Z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+              <img
+                class="w-[319px] rounded-lg"
+                src="https://img.youtube.com/vi/X-swJqjzjCI/0.jpg"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      var glide = new Glide('.glide', {
+        type: 'carousel',
+        perView: 3,
+        focusAt: 'center',
+        autoplay: 3000,
+        breakpoints: {
+          425: { perView: 1 },
+          768: { perView: 2 },
+          1200: { perView: 3 }
+        }
+      })
+
+      glide.mount()
+    </script>
+    <script>
+      const frame = document.querySelector('.selected_video')
+      const elements = document.querySelectorAll('.glide__slide')
+
+      for (const element of elements) {
+        element.addEventListener('click', (node) => {
+          const link = node.target.src
+            .replace('https://img.youtube.com/vi/', '')
+            .replace('/0.jpg', '')
+
+          frame.setAttribute('src', `https://www.youtube.com/embed/${link}`)
+        })
+      }
+    </script>
+  </body>
+</html>
